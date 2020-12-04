@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Introduccion.FechaNavidad</StartupObject>
+    <StartupObject>Introduccion.Cuadrante</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cifras.cs" />
+    <Compile Include="Cuadrante.cs" />
     <Compile Include="FechaNavidad.cs" />
     <Compile Include="Perimetro.cs" />
     <Compile Include="PositivoNuloNegativo.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="MayorMenor.cs" />
     <Compile Include="SumaProducto.cs" />
     <Compile Include="TresMayores.cs" />
+    <Compile Include="TresValores.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
