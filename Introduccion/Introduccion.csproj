@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Introduccion.Cifras</StartupObject>
+    <StartupObject>Introduccion.FechaNavidad</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cifras.cs" />
+    <Compile Include="FechaNavidad.cs" />
     <Compile Include="Perimetro.cs" />
     <Compile Include="PositivoNuloNegativo.cs" />
     <Compile Include="Preguntas.cs" />
