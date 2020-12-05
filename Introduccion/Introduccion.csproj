@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Introduccion.MenorRepetido</StartupObject>
+    <StartupObject>Introduccion.CrearMatriz</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,6 +51,7 @@
     <Compile Include="ArrayOrdenado.cs" />
     <Compile Include="Cifras.cs" />
     <Compile Include="Clases.cs" />
+    <Compile Include="CrearMatriz.cs" />
     <Compile Include="Cuadrante.cs" />
     <Compile Include="CursoNota.cs" />
     <Compile Include="EnterosParesImpares.cs" />
