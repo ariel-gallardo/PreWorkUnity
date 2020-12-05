@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Introduccion.IntercalarMatriz</StartupObject>
+    <StartupObject>Introduccion.TemperaturaPais</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -72,6 +72,7 @@
     <Compile Include="MayorMenor.cs" />
     <Compile Include="SueldoEmpleados.cs" />
     <Compile Include="SumaProducto.cs" />
+    <Compile Include="TemperaturaPais.cs" />
     <Compile Include="TresMayores.cs" />
     <Compile Include="TresValores.cs" />
     <Compile Include="Triangulo.cs" />
