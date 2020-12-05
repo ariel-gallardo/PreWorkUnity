@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Introduccion.EnterosParesImpares</StartupObject>
+    <StartupObject>Introduccion.Triangulo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -68,6 +68,7 @@
     <Compile Include="SumaProducto.cs" />
     <Compile Include="TresMayores.cs" />
     <Compile Include="TresValores.cs" />
+    <Compile Include="Triangulo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
