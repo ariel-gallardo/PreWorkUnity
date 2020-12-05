@@ -34,7 +34,7 @@ namespace Introduccion
 				return true;
 			});
 
-			Console.WriteLine (s ? " ordenado" : " desordenado"));
+			Console.WriteLine ((s ? " ordenado" : " desordenado"));
 			Console.ReadKey();
 		}
 	}
