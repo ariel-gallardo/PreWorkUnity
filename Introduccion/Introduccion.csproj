@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Introduccion.Antiguedad</StartupObject>
+    <StartupObject>Introduccion.InformeAlumno</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,6 +50,7 @@
     <Compile Include="Cifras.cs" />
     <Compile Include="Cuadrante.cs" />
     <Compile Include="FechaNavidad.cs" />
+    <Compile Include="InformeAlumno.cs" />
     <Compile Include="Perimetro.cs" />
     <Compile Include="PositivoNuloNegativo.cs" />
     <Compile Include="Preguntas.cs" />
