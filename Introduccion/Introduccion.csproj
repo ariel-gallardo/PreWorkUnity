@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Introduccion.MatrizDentada</StartupObject>
+    <StartupObject>Introduccion.MatrizDentadaEmpleado</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -60,6 +60,7 @@
     <Compile Include="IntercalarMatriz.cs" />
     <Compile Include="Listas.cs" />
     <Compile Include="MatrizDentada.cs" />
+    <Compile Include="MatrizDentadaEmpleado.cs" />
     <Compile Include="MenorRepetido.cs" />
     <Compile Include="Multiplo8.cs" />
     <Compile Include="Perimetro.cs" />
