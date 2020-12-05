@@ -21,7 +21,7 @@ namespace Introduccion
         {
             Console.Out.NewLine = "\n\n";
             List<Triangulo> triangulos = new List<Triangulo>();
-            while (true)
+            for(; ; )
             {
                 Triangulo t = new Triangulo(Int32.Parse(Console.ReadLine()), Int32.Parse(Console.ReadLine()));
                 if (t.Base == 0 || t.Altura == 0) { break; }
