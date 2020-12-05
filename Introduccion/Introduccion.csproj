@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Introduccion.AlturaPromedio</StartupObject>
+    <StartupObject>Introduccion.SueldoEmpleados</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -60,6 +60,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubTotal.cs" />
     <Compile Include="MayorMenor.cs" />
+    <Compile Include="SueldoEmpleados.cs" />
     <Compile Include="SumaProducto.cs" />
     <Compile Include="TresMayores.cs" />
     <Compile Include="TresValores.cs" />
