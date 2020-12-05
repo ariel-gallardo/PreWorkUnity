@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Introduccion.TemperaturaPais</StartupObject>
+    <StartupObject>Introduccion.MatrizDentada</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -59,6 +59,7 @@
     <Compile Include="InformeAlumno.cs" />
     <Compile Include="IntercalarMatriz.cs" />
     <Compile Include="Listas.cs" />
+    <Compile Include="MatrizDentada.cs" />
     <Compile Include="MenorRepetido.cs" />
     <Compile Include="Multiplo8.cs" />
     <Compile Include="Perimetro.cs" />
