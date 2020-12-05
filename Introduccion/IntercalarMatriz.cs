@@ -33,7 +33,19 @@ namespace Introduccion
 			{
 				for (int j = 0; j < matriz.Length / matriz.GetLength(0); j++)
 				{
-					Console.Write($"{matriz[i, j]}  ");
+					if ((i == 0 && j == 0) ||
+						(i == 0 && j == matriz.GetLength(1) - 1) ||
+						(i == matriz.GetLength(0)-1 && j == 0 ||
+						i == matriz.GetLength(1) - 1 && j == matriz.GetLength(0) - 1
+						)) {
+						Console.ForegroundColor = ConsoleColor.Cyan;
+						Console.Write($"{matriz[i, j]}  ");
+						Console.ForegroundColor = ConsoleColor.White;
+					}
+					else
+					{
+						Console.Write($"{matriz[i, j]}  ");
+					}
 				}
 				Console.WriteLine();
 			}
