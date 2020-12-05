@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Introduccion.SueldoEmpleados</StartupObject>
+    <StartupObject>Introduccion.Serie25</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -58,6 +58,7 @@
     <Compile Include="Promedio.cs" />
     <Compile Include="PromedioAlumno.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serie25.cs" />
     <Compile Include="SubTotal.cs" />
     <Compile Include="MayorMenor.cs" />
     <Compile Include="SueldoEmpleados.cs" />
