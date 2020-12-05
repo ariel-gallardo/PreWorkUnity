@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Introduccion.CursoNota</StartupObject>
+    <StartupObject>Introduccion.ArrayOrdenado</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="AlturaPromedio.cs" />
     <Compile Include="Antiguedad.cs" />
+    <Compile Include="ArrayOrdenado.cs" />
     <Compile Include="Cifras.cs" />
     <Compile Include="Clases.cs" />
     <Compile Include="Cuadrante.cs" />
