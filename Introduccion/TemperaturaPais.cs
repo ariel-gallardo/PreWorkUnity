@@ -8,17 +8,22 @@ namespace Introduccion
 {
 	class TemperaturaPais
 	{
-		private static Object[,] PaisTemperatura = new object[4, 4];
-		private static Double TempTrimMedia(int i) {
+		private static Object[,] PaisTemperatura = new object[4, 4];		
+		private static Double TempTrimMedia(int i, ref String Pais, ref Double Temperatura) {
 			Double tempTMedia = 0.0;
 			for (int j = 1; j < 4; j++)
 			{
 				tempTMedia += Double.Parse(PaisTemperatura[i, j].ToString());
 			}
+			if (Pais.Equals(String.Empty) || tempTMedia > Temperatura)
+			{
+				Pais = PaisTemperatura[i, 0].ToString();
+				Temperatura = tempTMedia / 3;
+			}
 			return tempTMedia / 3;
 		}
 		static void Main(string[] args) {
-			
+			String Pais = ""; Double Temperatura = 0.0;
 			Console.WriteLine("Pais | Temperatura");
 			for (int i = 0; i < PaisTemperatura.GetLength(0); i++)
 			{
@@ -43,11 +48,12 @@ namespace Introduccion
 				}
 				Console.Write($"Temperatura Trimestral Media: ");
 				Console.ForegroundColor = ConsoleColor.Red;
-				Console.WriteLine($"{TempTrimMedia(i):n}°C");
+				Console.WriteLine($"{TempTrimMedia(i,ref Pais, ref Temperatura):n}°C");
 				Console.ForegroundColor = ConsoleColor.White;
 				Console.WriteLine("\n");
 			}
 
+			Console.WriteLine($"{Pais} tiene la mayor temperatura trimestral de {Temperatura}°C");
 
 			Console.ReadKey();
 		}
