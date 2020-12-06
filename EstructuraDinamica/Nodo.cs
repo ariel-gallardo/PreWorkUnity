@@ -14,5 +14,10 @@ namespace EstructuraDinamica
 		{
 			Dato = dato;
 		}
+
+		public Nodo(Nodo nodo)
+		{
+			this.Dato = nodo.Dato;
+		}
 	}
 }

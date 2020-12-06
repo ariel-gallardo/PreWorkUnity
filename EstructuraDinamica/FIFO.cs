@@ -36,39 +36,39 @@ namespace EstructuraDinamica
 		public Nodo Extraer()
 		{
 			Nodo tempNodo = null;
-			if(Raiz._Nodo == null)
+			if(Raiz != null)
 			{
-				tempNodo = Raiz;
-				Raiz._Nodo = null;
-				Console.ForegroundColor = ConsoleColor.Red;
-				Console.Write(Raiz.Dato + " <- ");
-				Console.ForegroundColor = ConsoleColor.White;
-				return tempNodo;
-			}
-			else
-			{
-				tempNodo = Raiz._Nodo;
-				Nodo tempRaiz = Raiz;
-				while (tempNodo != null)
+				if(Raiz._Nodo == null)
 				{
-					if(tempNodo._Nodo == null)
+					tempNodo = Raiz;
+					Raiz = null;
+					Console.ForegroundColor = ConsoleColor.Red;
+					Console.Write(tempNodo.Dato + " <- ");
+					Console.ForegroundColor = ConsoleColor.White;
+					return tempNodo;
+				}
+				else
+				{
+					tempNodo = Raiz._Nodo;
+					Nodo tempRaiz = Raiz;
+					while (tempNodo != null)
 					{
-						Console.ForegroundColor = ConsoleColor.Red;
-						Console.Write(tempNodo.Dato + " <- ");
-						Console.ForegroundColor = ConsoleColor.White;
-						tempRaiz._Nodo = null;
-						return tempNodo;
-					}
-					else
-					{
-						tempRaiz = tempNodo;
-						tempNodo = tempRaiz._Nodo;
+						if (tempNodo._Nodo == null)
+						{
+							Console.ForegroundColor = ConsoleColor.Red;
+							Console.Write(tempNodo.Dato + " <- ");
+							Console.ForegroundColor = ConsoleColor.White;
+							tempRaiz._Nodo = null;
+							return tempNodo;
+						}
+						else
+						{
+							tempRaiz = tempNodo;
+							tempNodo = tempRaiz._Nodo;
+						}
 					}
 				}
 			}
-			Console.ForegroundColor = ConsoleColor.Magenta;
-			Console.WriteLine(" No hay mas elementos ");
-			Console.ForegroundColor = ConsoleColor.White;
 			return null;
 		}
 
