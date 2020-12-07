@@ -8,8 +8,8 @@ namespace EstructuraDinamica
 {
 	class Program
 	{
-		public static FIFO FIFO { get; set; }
-		public static LIFO LIFO { get; set; }
+		public static FIFO<int> FIFO { get; set; }
+		public static LIFO<int> LIFO { get; set; }
 		static void Main(string[] args)
 		{
 			InstanciarFIFO();
@@ -20,12 +20,12 @@ namespace EstructuraDinamica
 
 		public static void InstanciarLIFO() {
 			int valLIFO = 10;
-			LIFO = new LIFO();
+			LIFO = new LIFO<int>();
 			Console.WriteLine("Estructura de una Pila LIFO");
 			Console.Write("Insercion de valores: ");
 			do
 			{
-				LIFO.Insertar(new Nodo(valLIFO+=10));
+				LIFO.Insertar(new Nodo<int>(valLIFO+=10));
 			} while (valLIFO < 60);
 			Console.WriteLine();
 			Console.Write("Visualizacion de valores: "); VisualizacionLIFO();
@@ -41,12 +41,12 @@ namespace EstructuraDinamica
 
 		public static void InstanciarFIFO() {
 			int valFIFO = 10;
-			FIFO = new FIFO();
+			FIFO = new FIFO<int>();
 			Console.WriteLine("Estructura de una Pila FIFO");
 			Console.Write("Insercion de valores: ");
 			do
 			{
-				FIFO.Insertar(new Nodo(valFIFO+=10));
+				FIFO.Insertar(new Nodo<int>(valFIFO+=10));
 			} while (valFIFO < 60);
 			Console.WriteLine();
 			Console.Write("Visualizacion de valores: "); VisualizacionFIFO();

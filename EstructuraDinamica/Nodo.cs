@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace EstructuraDinamica
 {
-	class Nodo
+	class Nodo<T>
 	{
-		public Nodo _Nodo { get; set; }
-		public int Dato { get; set; }
-		public Nodo(int dato)
+		public Nodo<T> _Nodo { get; set; }
+		public T Dato { get; set; }
+		public Nodo(T dato)
 		{
 			Dato = dato;
 		}
-
-		public Nodo(Nodo nodo)
+		public Nodo(Nodo<T> nodo)
 		{
 			this.Dato = nodo.Dato;
 		}

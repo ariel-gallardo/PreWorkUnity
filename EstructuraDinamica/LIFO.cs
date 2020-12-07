@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace EstructuraDinamica
 {
-	class LIFO : Pila
+	class LIFO<T> : Pila<T>
 	{
 
-		public Nodo Extraer()
+		public Nodo<T> Extraer()
 		{	
 			if(Raiz != null)
 			{
-				Nodo tempNodo = Raiz;
+				Nodo<T> tempNodo = Raiz;
 				Raiz = Raiz._Nodo;
 				Console.ForegroundColor = ConsoleColor.Red;
-				Console.Write(tempNodo.Dato + " <- ");
+				Console.Write(tempNodo.Dato.ToString() + " <- ");
 				Console.ForegroundColor = ConsoleColor.White;
 				return tempNodo;
 			}

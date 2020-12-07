@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace EstructuraDinamica
 {
-	class FIFO : Pila
+	class FIFO<T> : Pila<T>
 	{
 
-		public override Nodo Extraer()
+		public override Nodo<T> Extraer()
 		{
-			Nodo tempNodo = null;
+			Nodo<T> tempNodo = null;
 			if(Raiz != null)
 			{
 				if(Raiz._Nodo == null)
@@ -19,20 +19,20 @@ namespace EstructuraDinamica
 					tempNodo = Raiz;
 					Raiz = null;
 					Console.ForegroundColor = ConsoleColor.Red;
-					Console.Write(tempNodo.Dato + " <- ");
+					Console.Write(tempNodo.Dato.ToString() + " <- ");
 					Console.ForegroundColor = ConsoleColor.White;
 					return tempNodo;
 				}
 				else
 				{
 					tempNodo = Raiz._Nodo;
-					Nodo tempRaiz = Raiz;
+					Nodo<T> tempRaiz = Raiz;
 					while (tempNodo != null)
 					{
 						if (tempNodo._Nodo == null)
 						{
 							Console.ForegroundColor = ConsoleColor.Red;
-							Console.Write(tempNodo.Dato + " <- ");
+							Console.Write(tempNodo.Dato.ToString() + " <- ");
 							Console.ForegroundColor = ConsoleColor.White;
 							tempRaiz._Nodo = null;
 							return tempNodo;

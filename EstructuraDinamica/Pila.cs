@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace EstructuraDinamica
 {
-	class Pila
+	class Pila<T>
 	{
-		public Nodo Raiz { get; set; }
+		public Nodo<T> Raiz { get; set; }
 
 		public Pila()
 		{
 		}
 
-		public Pila(Nodo raiz)
+		public Pila(Nodo<T> raiz)
 		{
 			Raiz = raiz;
 		}
-		public void Insertar(Nodo nodo)
+		public void Insertar(Nodo<T> nodo)
 		{
 			Console.ForegroundColor = ConsoleColor.Yellow;
 			Console.Write((Raiz != null ? " - " : String.Empty) + nodo.Dato);
@@ -34,13 +34,13 @@ namespace EstructuraDinamica
 			Console.ForegroundColor = ConsoleColor.White;
 		}
 
-		public virtual Nodo Extraer() {
+		public virtual Nodo<T> Extraer() {
 			return null;
 		}
 
 		public override string ToString()
 		{
-			Nodo tempRaiz = Raiz;
+			Nodo<T> tempRaiz = Raiz;
 			String Valores = String.Empty;
 			while (tempRaiz != null)
 			{
