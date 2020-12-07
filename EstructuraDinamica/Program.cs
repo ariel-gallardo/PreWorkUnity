@@ -19,47 +19,42 @@ namespace EstructuraDinamica
 		}
 
 		public static void InstanciarLIFO() {
+			int valLIFO = 10;
 			LIFO = new LIFO();
 			Console.WriteLine("Estructura de una Pila LIFO");
 			Console.Write("Insercion de valores: ");
-			LIFO.Insertar(new Nodo(10));
-			LIFO.Insertar(new Nodo(20));
-			LIFO.Insertar(new Nodo(30));
-			LIFO.Insertar(new Nodo(40));
-			LIFO.Insertar(new Nodo(50));
+			do
+			{
+				LIFO.Insertar(new Nodo(valLIFO+=10));
+			} while (valLIFO < 60);
 			Console.WriteLine();
 			Console.Write("Visualizacion de valores: "); VisualizacionLIFO();
 			Console.WriteLine("Extracciones:\n");
-			LIFO.Extraer(); VisualizacionLIFO();
-			LIFO.Extraer(); VisualizacionLIFO();
-			LIFO.Extraer(); VisualizacionLIFO();
-			LIFO.Extraer(); VisualizacionLIFO();
-			LIFO.Extraer(); VisualizacionLIFO();
-			LIFO.Extraer(); VisualizacionLIFO();
+			while(LIFO.Raiz != null)
+			{
+				LIFO.Extraer(); VisualizacionLIFO();
+			}
 			Console.WriteLine("\nPresionar una tecla para continuar.");
 			Console.ReadKey();
 			Console.Clear();
 		}
 
 		public static void InstanciarFIFO() {
+			int valFIFO = 10;
 			FIFO = new FIFO();
 			Console.WriteLine("Estructura de una Pila FIFO");
 			Console.Write("Insercion de valores: ");
-			FIFO.Insertar(new Nodo(10));
-			FIFO.Insertar(new Nodo(20));
-			FIFO.Insertar(new Nodo(30));
-			FIFO.Insertar(new Nodo(40));
-			FIFO.Insertar(new Nodo(50));
+			do
+			{
+				FIFO.Insertar(new Nodo(valFIFO+=10));
+			} while (valFIFO < 60);
 			Console.WriteLine();
 			Console.Write("Visualizacion de valores: "); VisualizacionFIFO();
 			Console.WriteLine("Extracciones:\n");
-			FIFO.Extraer(); VisualizacionFIFO();
-			FIFO.Extraer(); VisualizacionFIFO();
-			FIFO.Extraer(); VisualizacionFIFO();
-			FIFO.Extraer(); VisualizacionFIFO();
-			FIFO.Extraer(); VisualizacionFIFO();
-			FIFO.Extraer(); VisualizacionFIFO();
-			FIFO.Extraer(); VisualizacionFIFO();
+			while(FIFO.Raiz != null)
+			{
+				FIFO.Extraer(); VisualizacionFIFO();
+			}
 			Console.WriteLine("\nPresionar una tecla para continuar.");
 			Console.ReadKey();
 			Console.Clear();
@@ -87,7 +82,16 @@ namespace EstructuraDinamica
 			if (LIFO != null)
 			{
 				Console.ForegroundColor = ConsoleColor.Cyan;
-				Console.WriteLine(LIFO);
+				if (LIFO.Raiz == null)
+				{
+					Console.ForegroundColor = ConsoleColor.Magenta;
+					Console.WriteLine("No hay mas elementos ");
+					Console.ForegroundColor = ConsoleColor.White;
+				}
+				else
+				{
+					Console.WriteLine(LIFO);
+				}
 				Console.ForegroundColor = ConsoleColor.White;
 			}
 		}
