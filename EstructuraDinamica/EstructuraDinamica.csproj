@@ -51,7 +51,7 @@
     <Compile Include="LIFO.cs" />
     <Compile Include="Nodo.cs" />
     <Compile Include="FIFO.cs" />
-    <Compile Include="Pila.cs" />
+    <Compile Include="Lista.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

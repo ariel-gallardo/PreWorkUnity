@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace EstructuraDinamica
 {
-	public class Pila<T>
+	public class Lista<T>
 	{
 		public Nodo<T> Raiz { get; set; }
 
-		public Pila()
+		public Lista()
 		{
 		}
 
-		public Pila(Nodo<T> raiz)
+		public Lista(Nodo<T> raiz)
 		{
 			Raiz = raiz;
 		}
