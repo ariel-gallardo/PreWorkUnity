@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EstructuraDinamica
 {
-	class Pila<T>
+	public class Pila<T>
 	{
 		public Nodo<T> Raiz { get; set; }
 

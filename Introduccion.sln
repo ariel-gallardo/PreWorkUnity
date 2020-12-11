@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasesParciales", "ClasesPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstructuraDinamica", "EstructuraDinamica\EstructuraDinamica.csproj", "{A9840DE7-195C-45CB-BF38-F56409262C33}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProblemaPilas", "ProblemaPilas\ProblemaPilas.csproj", "{C532537F-539D-44B2-9A11-03210929ADC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A9840DE7-195C-45CB-BF38-F56409262C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9840DE7-195C-45CB-BF38-F56409262C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9840DE7-195C-45CB-BF38-F56409262C33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C532537F-539D-44B2-9A11-03210929ADC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C532537F-539D-44B2-9A11-03210929ADC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C532537F-539D-44B2-9A11-03210929ADC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C532537F-539D-44B2-9A11-03210929ADC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

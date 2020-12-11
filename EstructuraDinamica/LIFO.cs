@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace EstructuraDinamica
 {
-	class LIFO<T> : Pila<T>
+	public class LIFO<T> : Pila<T>
 	{
 
-		public Nodo<T> Extraer()
+		public override Nodo<T> Extraer()
 		{	
 			if(Raiz != null)
 			{

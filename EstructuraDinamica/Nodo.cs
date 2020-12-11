@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EstructuraDinamica
 {
-	class Nodo<T>
+	public class Nodo<T>
 	{
 		public Nodo<T> _Nodo { get; set; }
 		public T Dato { get; set; }
