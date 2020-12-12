@@ -20,8 +20,8 @@ namespace EstructuraDinamica
 		}
 		public void Insertar(Nodo<T> nodo)
 		{
-			Console.ForegroundColor = ConsoleColor.Yellow;
-			Console.Write((Raiz != null ? " - " : String.Empty) + nodo.Dato);
+			//Console.ForegroundColor = ConsoleColor.Yellow;
+			//Console.Write((Raiz != null ? " - " : String.Empty) + nodo.Dato);
 			if (Raiz == null)
 			{
 				Raiz = nodo;
@@ -31,7 +31,7 @@ namespace EstructuraDinamica
 				nodo._Nodo = Raiz;
 				Raiz = nodo;
 			}
-			Console.ForegroundColor = ConsoleColor.White;
+			//Console.ForegroundColor = ConsoleColor.White;
 		}
 
 		public virtual Nodo<T> Extraer() {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EstructuraDinamica
 {
-	class Program
+	public class Program
 	{
 		public static FIFO<int> FIFO { get; set; }
 		public static LIFO<int> LIFO { get; set; }
@@ -78,7 +78,7 @@ namespace EstructuraDinamica
 			}
 		}
 		public static void VisualizacionLIFO()
-		{
+		{/*
 			if (LIFO != null)
 			{
 				Console.ForegroundColor = ConsoleColor.Cyan;
@@ -93,7 +93,7 @@ namespace EstructuraDinamica
 					Console.WriteLine(LIFO);
 				}
 				Console.ForegroundColor = ConsoleColor.White;
-			}
+			}*/
 		}
 	}
 }

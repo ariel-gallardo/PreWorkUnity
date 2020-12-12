@@ -18,9 +18,9 @@ namespace EstructuraDinamica
 				{
 					tempNodo = Raiz;
 					Raiz = null;
-					Console.ForegroundColor = ConsoleColor.Red;
-					Console.Write(tempNodo.Dato.ToString() + " <- ");
-					Console.ForegroundColor = ConsoleColor.White;
+					//Console.ForegroundColor = ConsoleColor.Red;
+					//Console.Write(tempNodo.Dato.ToString() + " <- ");
+					//Console.ForegroundColor = ConsoleColor.White;
 					return tempNodo;
 				}
 				else
@@ -31,9 +31,9 @@ namespace EstructuraDinamica
 					{
 						if (tempNodo._Nodo == null)
 						{
-							Console.ForegroundColor = ConsoleColor.Red;
-							Console.Write(tempNodo.Dato.ToString() + " <- ");
-							Console.ForegroundColor = ConsoleColor.White;
+							//Console.ForegroundColor = ConsoleColor.Red;
+							//Console.Write(tempNodo.Dato.ToString() + " <- ");
+							//Console.ForegroundColor = ConsoleColor.White;
 							tempRaiz._Nodo = null;
 							return tempNodo;
 						}
